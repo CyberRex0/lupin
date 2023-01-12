@@ -153,7 +153,7 @@ async function playAudio(assetName: string) {
   if (audioRes[assetName].readyState === 0) return;
   audioRes[assetName].pause();
   audioRes[assetName].currentTime = 0;
-  await audioRes[assetName].play();
+  audioRes[assetName].play();
 }
 
 
